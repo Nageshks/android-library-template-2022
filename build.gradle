@@ -1,8 +1,8 @@
 buildscript {
     ext {
         // gradle plugin version
-        v_gradle_build = '7.0.0'
-        v_kotlin_plugin = '1.5.21'
+        v_gradle_build = '7.2.0'
+        v_kotlin_plugin = '1.6.21'
         v_publisher = '0.17.0'
 
         // library plugin version
@@ -24,6 +24,16 @@ buildscript {
         t_junit = "junit:junit:$v_t_junit"
         at_junit = "androidx.test.ext:junit:$v_at_junit"
         at_espresso = "androidx.test.espresso:espresso-core:$v_at_espresso"
+
+
+        app_id ="com.nageshempire.nextplayer.mad.sample"
+        library_id ="com.nageshempire.nextplayer.mad"
+        app_compileSdk = 32
+        app_buildToolsVersion = "32.0.0"
+        app_minSdk = 21
+        app_targetSdk = 32
+        app_versionCode = 19
+        app_versionName = "1.0.0"
     }
 
     repositories {

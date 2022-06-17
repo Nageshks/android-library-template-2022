@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk app_compileSdk
 
     defaultConfig {
-        applicationId "com.nageshempire.sample"
-        minSdk 21
+        applicationId app_id
+        minSdk app_minSdk
         targetSdk 30
-        versionCode 1
-        versionName "1.0"
+        versionCode app_versionCode
+        versionName app_versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -33,6 +33,7 @@ android {
     buildFeatures{
         viewBinding true
     }
+    namespace app_id
 }
 
 dependencies {

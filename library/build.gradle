@@ -5,14 +5,11 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk app_compileSdk
 
     defaultConfig {
-        minSdk 21
-        targetSdk 30
-        versionCode 1
-        versionName "1.0"
-
+        minSdk app_minSdk
+        targetSdk app_targetSdk
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -33,6 +30,7 @@ android {
     buildFeatures{
         viewBinding true
     }
+    namespace library_id
 }
 
 dependencies {
